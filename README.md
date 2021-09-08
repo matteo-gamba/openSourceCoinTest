@@ -1,3 +1,3 @@
 # openSourceCoinTest
-Dummy PR for OpenSourceCoin Project
+Dummy PR for OpenSourceCoin
 
