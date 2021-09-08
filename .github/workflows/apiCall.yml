@@ -30,7 +30,7 @@ jobs:
         data: '{"test data": "lorem ipsum cuhdiufheiufchvuivciuhefuvhiuefhviowhrvoihrwoivhiorhfiohrihfoiwh"}'
         
     - name: Logging to console
-      run: echo "${{ github.event.pull_request.merged }}"
+      run: echo "${{ github.event.pull_request.merged }}, PR Nr - ${{github.event.number}}"
       
     - uses: actions/checkout@v1
       # Find the PR associated with this push, if there is one.
