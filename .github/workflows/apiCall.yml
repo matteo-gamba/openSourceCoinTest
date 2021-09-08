@@ -24,6 +24,8 @@ jobs:
       with:
         url: 'https://api.coingecko.com/api/v3/ping'
         method: 'GET'
+    - name: Printing To console
+      run: echo "This is being printed"
       
     
   # This workflow contains a single job called "build"
