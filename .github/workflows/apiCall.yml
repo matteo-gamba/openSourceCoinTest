@@ -26,7 +26,7 @@ jobs:
         method: 'POST'
         data: '{"test data": "lorem ipsum cuhdiufheiufchvuivciuhefuvhiuefhviowhrvoihrwoivhiorhfiohrihfoiwh"}'
     - name: Printing To console
-      run: echo "This is being printed"
+      run: echo "Deploying to production server on branch $GITHUB_REF"
       
     
   # This workflow contains a single job called "build"
