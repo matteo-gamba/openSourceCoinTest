@@ -22,9 +22,7 @@ jobs:
     - name: HTTP Request Action
       uses: fjogeleit/http-request-action@v1.8.0
       with:
-        url: 'https://europe-west6-i18n-translator-323914.cloudfunctions.net/cost-function'
-        method: 'POST'
-        data: '{"test data": "lorem ipsum cuhdiufheiufchvuivciuhefuvhiuefhviowhrvoihrwoivhiorhfiohrihfoiwh"}'
+        url: 'https://api.coingecko.com/api/v3/ping'
       
     
   # This workflow contains a single job called "build"
