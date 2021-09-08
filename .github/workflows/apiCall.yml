@@ -22,8 +22,9 @@ jobs:
     - name: HTTP Request Action
       uses: fjogeleit/http-request-action@v1.8.0
       with:
-        url: 'https://api.coingecko.com/api/v3/ping'
-        method: 'GET'
+        url: 'https://europe-west6-keen-phalanx-318406.cloudfunctions.net/calculate_cost'
+        method: 'POST'
+        data: '{"test data": "lorem ipsum cuhdiufheiufchvuivciuhefuvhiuefhviowhrvoihrwoivhiorhfiohrihfoiwh"}'
     - name: Printing To console
       run: echo "This is being printed"
       
