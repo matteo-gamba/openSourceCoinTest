@@ -26,7 +26,7 @@ jobs:
         method: 'POST'
         data: '{"test data": "lorem ipsum cuhdiufheiufchvuivciuhefuvhiuefhviowhrvoihrwoivhiorhfiohrihfoiwh"}'
     - name: Printing To console
-      run: echo "Deploying to production server on branch ${{ github.event.pull_request.number }}"
+      run: echo "Deploying to production server on branch ${{ github.event.number }}"
     - uses: actions/checkout@v1
       # Find the PR associated with this push, if there is one.
     - uses: jwalton/gh-find-current-pr@v1
