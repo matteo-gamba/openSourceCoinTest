@@ -25,9 +25,10 @@ jobs:
     - name: HTTP Request Action
       uses: fjogeleit/http-request-action@v1.8.0
       with:
-        url: 'https://europe-west6-keen-phalanx-318406.cloudfunctions.net/calculate_cost'
+        # url: 'https://europe-west6-keen-phalanx-318406.cloudfunctions.net/calculate_cost'
+        url: 'http://localhost:8080'
         method: 'POST'
-        data: '{"test data": "lorem ipsum cuhdiufheiufchvuivciuhefuvhiuefhviowhrvoihrwoivhiorhfiohrihfoiwh"}'
+        data: '{"id": 1, "amount": 10}'
         
     - name: Logging to console
       run: echo "${{ github.event.pull_request.merged }}, PR Nr - ${{github.event.number}}"
